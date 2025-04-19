@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FlexBox Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #111;
+      color: black;
+    }
+
+    .container {
+      background: white;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .navbar, .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .navbar div, .footer div {
+      flex: 1;
+      text-align: center;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .main-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background-color: red;
+      color: white;
+      font-weight: bold;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div>Logo</div>
+      <div>navbar</div>
+      <div>navbar</div>
+      <div>navbar</div>
+      <div>navbar</div>
+      <div>navbar</div>
+      <div>navbar</div>
+    </div>
+
+    <div class="section-title">1-Section</div>
+
+    <div class="main-section">
+      <div class="box">Left</div>
+      <div class="box">Right</div>
+    </div>
+
+    <div class="footer">
+      <div>Logo</div>
+      <div>footer</div>
+      <div>footer</div>
+      <div>footer</div>
+      <div>footer</div>
+      <div>footer</div>
+      <div>footer</div>
+    </div>
+  </div>
+</body>
+</html>
